@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<body ng-app = 'myApp'>
+
+
+    <div ng-controller ="myctrl">
+       
+        <button ng-click="Display()">Display</button>
+        <span>
+            <br>
+            {{names}}<br>
+            {{obj}}
+        </span>
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myctrl', function($scope){
+       
+        $scope.Display= function(){
+            $scope.obj = 'Project Group'
+        $scope.names =["Prathamesh",  "Nitish", "Pratham"];
+        };
+    });
+</script>
+</body>
+</html>
