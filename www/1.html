@@ -16,9 +16,9 @@
     var app = angular.module('myApp', []);
     app.controller('myctrl', function($scope){
        
-        $scope.Display= function(){
-            $scope.obj = 'Project Group'
-        $scope.names =["Prathamesh",  "Nitish", "Pratham"];
+            $scope.Display= function(){
+            $scope.obj = {name:'Prathamesh', age:21,class:'MCA1B'}        
+            $scope.names =["Prathamesh",  "Nitish", "Pratham"];
         };
     });
 </script>
